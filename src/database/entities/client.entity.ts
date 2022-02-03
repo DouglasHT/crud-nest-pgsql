@@ -1,8 +1,8 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm'
+import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from 'typeorm'
 
 @Entity({ name: 'client' })
 export class Client {
-  @PrimaryColumn()
+  @PrimaryGeneratedColumn()
   id_client: number
 
   @Column({ type: 'varchar', length: 150 })
@@ -11,7 +11,7 @@ export class Client {
   @Column({ type: 'varchar', length: 150 })
   email: string
 
-  @Column({ type: 'string', length: 20 })
+  @Column({ type: 'varchar', length: 20 })
   phone: string
 
   @Column({ type: 'varchar', length: 150 })

@@ -1,27 +1,27 @@
-import { IsString } from 'class-validator';
+import { IsString } from 'class-validator'
 
 export class CreateClientDto {
   @IsString()
-  readonly name: string;
+  readonly name: string
 
   @IsString()
-  readonly email: string;
+  readonly email: string
 
   @IsString()
-  readonly phone: string;
+  readonly phone: string
 
   @IsString()
-  readonly street: string;
+  readonly street: string
 
   @IsString()
-  readonly number: string;
+  readonly number: string
 
   @IsString()
-  readonly district: string;
+  readonly district: string
 
   @IsString()
-  readonly city: string;
+  readonly city: string
 
   @IsString()
-  readonly state: string;
+  readonly state: string
 }
